@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerFooter.min.css">
+    <link rel="stylesheet" href="../css/addTender.min.css">
+    <title>VDS / Все для стройки</title>
+</head>
+<body>
+<header>
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <h1>
+            <a href="./prodavci.html">
+                <span>VDS</span>
+                <span>все для стройки</span>
+            </a>
+            </h1>
+        </div>
+        <div class="menu__toggler">
+            <span></span>
+        </div>
+        <div class="header__menu">
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="./prodavci.html" class="current__item">Каталог продавцов</a></li>
+                    <li><a href="./materialsTenders.html"> Тендеры на материалы </a></li>
+                    <li><a href="./worksTenders.html">Тендеры на работы</a></li>
+                    <li><a href="./specialtechnicka.html">Спецтехника</a></li>
+                </ul>
+                <ul class="auth__mob__menu">
+                    <li><a href="./myInfo.html"  class="current__item"> Личная информация</a></li>
+                    <li><a href="./myTenders.html">Мои тендеры</a></li>
+                    <li><a href="./myMessages.html">Сообщения</a></li>
+                    <li><a href="./mySertificates.html">Лицензии</a></li>
+                    <li><a href="./myTariff.html">Тариф аккаунта</a></li>
+                    <li><a href="./myStatus.html">Статус исполнителя</a></li>
+                    <li><a href="#">Выйти из системы</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a href="./login.html" class="enter">Вход</a>
+            </div>
+        </div>
+        <div class="header__auth">
+            <a href="./login.html" class="enter">Вход</a>
+            <a href="./myInfo.html" class="account">Название компании</a>
+        </div>
+    </div>
+</header>
+<main>
+    <form class="main__wrapper">
+        <h2>Добавить спецтехнику</h2>
+        <div class="addTender__title">
+            <p>Описание техники</p>
+        </div>
+        <div class="tender__description">
+            <input type="text" name="title" placeholder="Название техники (например: Самосвал 30т.)">
+            <div class="shippingCity">
+                <span>Объект находится</span>
+                <div>
+                    <select name="selectCity" id="selectSity">
+
+                        <option value="Киев">
+                            Киев
+                        </option>
+                        <option value="Пример">
+                            Пример
+                        </option>
+                    </select>
+                    <input type="text" readonly value="Киев">
+                </div>
+            </div>
+            <textarea placeholder="Максимально подробно опишите технику"></textarea>
+            <input type="file" id="file">
+            <label for="file">Добавить файл</label>
+            <span>jpg, jpeg, png, pdf, xlsx, xls, doc, docx, zip, rar</span>
+
+        </div>
+        <div class="addTender__title">
+            <p>Выберите категорию выполняемых услуг</p>
+        </div>
+        <div class="checkbox__cols_container">
+            <span class="colls__title">Категории</span>
+            <div class="checkbox__cols">
+                <div>
+                    <input id="category0" type="radio" value="0" name="selectCategory"/>
+                    <label for="category0">Бетон и ЖБИ</label>
+                    <input id="category1" type="radio" value="1" name="selectCategory"/>
+                    <label for="category1">Изоляционные материалы </label>
+                    <input id="category2" type="radio" value="1" name="selectCategory"/>
+                    <label for="category2">Кладочные материалы
+                    </label>
+                    <input id="category3" type="radio" value="1" name="selectCategory"/>
+                    <label for="category3">Кровельные материалы
+                    </label>
+                    <input id="category4" type="radio" value="1" name="selectCategory"/>
+                    <label for="category4">Лакокрасочные материалы
+                    </label>
+                </div>
+                <div>
+                    <input id="category5" type="radio" value="Бетон и ЖБИ" name="selectCategory"/>
+                    <label for="category5">Бетон и ЖБИ</label>
+                    <input id="category6" type="radio" value="Трубы" name="selectCategory"/>
+                    <label class="has__child__options"for="category6">Трубы
+                        <ul>
+                            <input id="category6.1" type="radio" value="Гофрированные трубы
+" name="selectCategory-sub"/>
+                            <label for="category6.1">Гофрированные трубы
+                            </label>
+                            <input id="category6.2" type="radio" value="Запорная арматура, краны
+" name="selectCategory-sub" />
+                            <label for="category6.2">Запорная арматура, краны
+                            </label>
+                        </ul>
+                    </label>
+                    <input id="category7" type="radio" value="Кладочные материалы" name="selectCategory"/>
+                    <label for="category7">Кладочные материалы
+                    </label>
+                    <input id="category8" type="radio" value="Кровельные материалы" name="selectCategory"/>
+                    <label for="category8">Кровельные материалы
+                    </label>
+                    <input id="category9" type="radio" value="Лакокрасочные материалы" name="selectCategory"/>
+                    <label for="category9">Лакокрасочные материалы
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="addTender__title">
+            <p>Бюджет</p>
+        </div>
+        <div class="checkbox__col">
+            <input id="budget0" type="radio" value="Мелкий объем (до 10 000 грн)
+" name="selectBudget"/>
+            <label for="budget0">Мелкий объем (до 10 000 грн)
+            </label>
+            <input id="budget1" type="radio" value="Средний (до 50 000 грн)" name="selectBudget"/>
+            <label for="budget1">Средний (до 50 000 грн)
+            </label>
+            <input id="budget2" type="radio" value="Крупный (до 500 000 грн и выше)" name="selectBudget"/>
+            <label for="budget2">Крупный (до 500 000 грн и выше)
+            </label>
+        </div>
+        <div class="addTender__title">
+            <p>Контактные данные</p>
+        </div>
+        <div class="checkbox__row">
+            <span class="colls__title">Кто Вы</span>
+            <input id="position0" type="radio" value="Владелец (или его представитель)
+" name="selectNeed"/>
+            <label for="position0">Владелец (или его представитель)
+            </label>
+            <input id="position1" type="radio" value="Подрядчик (ищу на субподряд)" name="selectNeed"/>
+            <label for="position1">Подрядчик (ищу на субподряд) </label>
+            <input id="position2" type="radio" value="Посредник (без процента)
+" name="selectNeed"/>
+            <label for="position2">Посредник (без процента)</label>
+            <input id="position3" type="radio" value="Посредник (с процентом)
+" name="selectNeed"/>
+            <label for="position3">Посредник (с процентом)</label>
+        </div>
+        <div class="contactInfo">
+            <input type="text" name="name" placeholder="Ваше ФИО или Название компании">
+            <input type="tel" name="tel" placeholder="Контактный телефон">
+            <span>Добавить еще телефон</span>
+            <input type="email" placeholder="Контактный Email ">
+        </div>
+
+        <div class="ifAuth">
+            <div class="addTender__title ">
+                <p>Регистрационные данные</p>
+            </div>
+            <div class="regInfo">
+                <input type="text" name="regName" placeholder="Имя">
+                <input type="tel" name="regTel" placeholder="Телефон">
+                <input type="email" name="regEmail" placeholder="Email">
+                <div class="passwordInput">
+                    <input type="password" name="regPassword" placeholder="Пароль">
+                    <span></span>
+                </div>
+                <div class="policy">
+                    <input type="checkbox" checked value="agreed" required id="agreed">
+                    <label for="agreed">Согласен с правилами сайта</label>
+                    <span>Если Вы согласны с Правилами пользования сервисом
+(сайтом) и обязуетесь их соблюдать, а также согласны
+с обработкой Ваших данных, поставьте «галочку».</span>
+                </div>
+
+
+            </div>
+        </div>
+        <button type="submit">Создать тендер</button>
+    </form>
+
+
+</main>
+<footer>
+    <div class="footer__wrapper">
+        <nav class="footer__menu">
+            <ul>
+                <li><a href="./prodavci.html">Каталог продавцов</a></li>
+                <li><a href="./materialsTenders.html"> Тендеры на материалы </a></li>
+                <li><a href="./worksTenders.html">Тендеры на работы</a></li>
+                <li><a href="./specialtechnicka.html">Спецтехника</a></li>
+            </ul>
+        </nav>
+        <div class="footer__info">
+            <div class="copyright">
+                <p>© 2020. All rights reserved.</p>
+            </div>
+            <div class="footer__logo">
+                <h1>
+                    <a href="./">
+                        <span>VDS</span>
+                        <span>все для стройки</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/newTender.min.js"></script>
+<script src="../js/common.min.js"></script>
+</body>
+</html>

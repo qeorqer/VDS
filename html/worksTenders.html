@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerFooter.min.css">
+    <link rel="stylesheet" href="../css/tenders.min.css">
+    <title>VDS / Все для стройки</title>
+</head>
+<body>
+<header>
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <h1>
+            <a href="./prodavci.html">
+                <span>VDS</span>
+                <span>все для стройки</span>
+            </a>
+            </h1>
+        </div>
+        <div class="menu__toggler">
+            <span></span>
+        </div>
+        <div class="header__menu">
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="./prodavci.html" class="current__item">Каталог продавцов</a></li>
+                    <li><a href="./materialsTenders.html"> Тендеры на материалы </a></li>
+                    <li><a href="./worksTenders.html">Тендеры на работы</a></li>
+                    <li><a href="./specialtechnicka.html">Спецтехника</a></li>
+                </ul>
+                <ul class="auth__mob__menu">
+                    <li><a href="./myInfo.html"  class="current__item"> Личная информация</a></li>
+                    <li><a href="./myTenders.html">Мои тендеры</a></li>
+                    <li><a href="./myMessages.html">Сообщения</a></li>
+                    <li><a href="./mySertificates.html">Лицензии</a></li>
+                    <li><a href="./myTariff.html">Тариф аккаунта</a></li>
+                    <li><a href="./myStatus.html">Статус исполнителя</a></li>
+                    <li><a href="#">Выйти из системы</a></li>
+                </ul>
+            </nav>
+            <div class="header__auth">
+                <a href="./login.html" class="enter">Вход</a>
+            </div>
+        </div>
+        <div class="header__auth">
+            <a href="./login.html" class="enter">Вход</a>
+            <a href="./myInfo.html" class="account">Название компании</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="wide__wrapper">
+        <div class="sidebar">
+            <div class="sidebar__top">
+                <span>Поиск по тендерам</span>
+                <div class="input__wrapper">
+                    <input type="search" placeholder="№ заявки или ключевое слово">
+                </div>
+                <a href="./addWorkTenders.html">Создать тендер на работы</a>
+
+                <button class="show__filters">Фильтры</button>
+            </div>
+            <form class="sidebar__bottom">
+                <div class="filters__head">
+                    <p>Фильтры</p>
+                    <div class="close__filters">
+                        <span></span>
+                    </div>
+                </div>
+
+                <span>Выберите регион</span>
+                <div class="select__form">
+                    <h3 class="select__title">Показать все</h3>
+                    <div class="select__content">
+                        <input id="region0" type="radio" value="0" name="selectRegion" checked/>
+                        <label for="region0">Показать все</label>
+                        <input id="region1" type="radio" value="1" name="selectRegion"/>
+                        <label for="region1">пример</label>
+                    </div>
+                </div>
+
+                <span>Виды работ</span>
+                <div class="select__form">
+                    <h3 class="select__title">Показать все</h3>
+                    <div class="select__content">
+                        <input id="work0" type="radio" value="0" name="selectWork" checked/>
+                        <label for="work0">Показать все</label>
+                        <input id="work1" type="radio" value="1" name="selectWork"/>
+                        <label for="work1">пример</label>
+                    </div>
+                </div>
+                <span>Бюджет</span>
+                <div class="select__form">
+                    <h3 class="select__title">Показать все</h3>
+                    <div class="select__content">
+                        <input id="budget0" type="radio" value="0" name="selectBudget" checked/>
+                        <label for="budget0">Показать все</label>
+                        <input id="budget1" type="radio" value="1" name="selectBudget"/>
+                        <label for="budget1">пример</label>
+                    </div>
+                </div>
+                <span>Заказчик</span>
+                <div class="select__form">
+                    <h3 class="select__title">Показать все</h3>
+                    <div class="select__content">
+                        <input id="customer0" type="radio" value="0" name="selectCustomer" checked/>
+                        <label for="customer0">Показать все</label>
+                        <input id="customer1" type="radio" value="1" name="selectCustomer"/>
+                        <label for="customer1">пример</label>
+                    </div>
+                </div>
+
+
+                <span>Тендеры</span>
+                <div class="selectradio__form">
+                    <input type="radio" value="active" name="filterTenders" id="active">
+                    <label for="active">актуальные</label>
+                    <input type="radio" value="inactive" name="filterTenders" id="inactive">
+                    <label for="inactive">закрытые</label>
+                </div>
+
+                <button class="use__filters">
+                    Применить фильтры
+                </button>
+            </form>
+        </div>
+        <div class="content">
+            <p>Всего тендеров: <span class="tenders__number">22701</span></p>
+            <div class="tenders__cards">
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card inactive">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tender__card">
+                    <div class="card__head">
+                        <div class="card__id">
+                            <p>№22701</p>
+                        </div>
+                        <div class="card__title">
+                            <p>Декоративная штукатурка (Киев)</p>
+                        </div>
+                        <div class="card__offers">
+                            <p>Предложений: 2</p>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <ul class="card__list">
+                            <li>утепление цоколя пенополистиролом
+                            </li>
+                            <li>нанесение денкоративной штукатурки
+                                (гранитная крошка) 86 м2</li>
+                        </ul>
+                        <div class="card__info">
+                            <div>
+                                <p class="card__term">Окончание: <span>30.07.2020</span></p>
+                                <p class="card__budget">Бюджет до <span>25 000</span> грн</p>
+                            </div>
+                            <a href="./worksSingleTender.html">Подробнее о тендере</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <ul class="pagination">
+                <!--add class "notFirstPage" to the prev__item, if it's not the first page -->
+                <li class="prev__item"><a href="#"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next__item notLastPage"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer__wrapper">
+        <nav class="footer__menu">
+            <ul>
+                <li><a href="./prodavci.html">Каталог продавцов</a></li>
+                <li><a href="./materialsTenders.html"> Тендеры на материалы </a></li>
+                <li><a href="./worksTenders.html">Тендеры на работы</a></li>
+                <li><a href="./specialtechnicka.html">Спецтехника</a></li>
+            </ul>
+        </nav>
+        <div class="footer__info">
+            <div class="copyright">
+                <p>© 2020. All rights reserved.</p>
+            </div>
+            <div class="footer__logo">
+                <h1>
+                    <a href="./">
+                        <span>VDS</span>
+                        <span>все для стройки</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/common.js"></script>
+</body>
+</html>
